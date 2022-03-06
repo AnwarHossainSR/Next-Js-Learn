@@ -1,14 +1,15 @@
 import React from "react";
+import User from "../components/User";
 
 const users = ({ users }) => {
   return (
     <>
       <h1>All Users</h1>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>{user.name}</li>
+      <>
+        {users.map((item) => (
+          <User key={item.id} user={item} />
         ))}
-      </ul>
+      </>
     </>
   );
 };
