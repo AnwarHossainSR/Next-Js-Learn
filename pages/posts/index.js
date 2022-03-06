@@ -9,8 +9,8 @@ const postList = ({ posts }) => {
         <div key={post.id}>
           <Link href={`/posts/${post.id}`} passHref>
             <h1>{post.title}</h1>
-            <hr />
           </Link>
+          <hr />
         </div>
       ))}
     </>
